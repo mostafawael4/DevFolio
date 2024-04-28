@@ -1,0 +1,229 @@
+body{
+  overflow-x: hidden;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  /* position: relative; */
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-item {
+  position: relative;
+  width: fit-content;
+}
+.navbar-light .navbar-nav .nav-item::after {
+  content: '';
+  position: absolute;
+  left: 10;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-item:hover::after {
+  width: 80%;
+}
+.nav-link.dropdown-toggle:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+main {
+  height: 100%;
+  width: 100%;
+  /* background-image: url(../images/hero-bg.jpg); */
+  background-image: linear-gradient(to right ,rgba(0, 0, 0, 0.5) ,rgba(0, 0, 0, 0.5)) , url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.tefa{
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 40%;
+}
+.tefa h1{
+     font-size: 70px;
+}
+.tefa .vc {
+    position: relative;
+    overflow: hidden;
+    
+}
+.tefa .vc p{
+  position: relative;
+  left: 0%;
+  animation: remove 1s alternate infinite;
+}
+
+ .tefa .vc::after{
+    content: "|";
+    position: absolute;
+    right: -3px;
+    top: 0;
+    height: 50px;
+    
+}
+@keyframes remove{
+  10%{
+      left: 10%;
+    }
+    20%{
+      left: 20%;
+    }
+    30%{
+      left: 30%;
+    }
+    40%{
+      left: 40%;
+    }
+    50%{
+      left: 50%;
+    }
+    60%{
+      left: 60%;
+    }
+    70%{
+      left: 70%;
+    }
+    80%{
+      left: 80%;
+    }
+    90%{
+      left: 90%;
+    }
+    100%{
+      left: 100%;
+    }
+}
+.con {
+  width: fit-content;
+}
+.line {
+  width: 100%;
+  height: 4px;
+  background-color: #0078ff;
+}
+.text {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.mostafa {
+  min-height: 80%;
+}
+.service {
+  margin-top: 50px;
+  min-height: 100%;
+}
+.linee{
+    width: 5%;
+    height: 5px;
+    background-color: #0078ff;
+    margin: auto;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    font-size: 40px;
+    border: 10px solid #0078FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: all 0.5s;
+    margin-top: 15px;
+}
+.item:hover .icon{
+    background-color: #0078FF;
+    border-color: rgb(195, 195, 195);
+    color: white;
+}
+.color
+{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 300px;
+    background-image: linear-gradient(to right , #0077ff9a , #0077ff8a) , url(../images/post-3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.custom{
+  min-height: 500px;
+}
+
+.plus{
+    color: blue;
+    font-size: 20px;
+    border: 3px solid  blue;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    cursor: pointer;
+}
+.tr{
+  transition: all 1s;
+}
+.product:hover img{
+    scale: 1.5;
+    cursor: pointer;
+}
+.travel{
+  background-color: #0078FF;
+}
+.t h5{
+  transition: all 0.8s;
+}
+.t h5:hover{
+  color: #0078ff;
+  cursor: pointer;
+}
+.details{
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  background-color: rgba(128, 128, 128, 0.274);
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.lo .name{
+  transition: all 0.8s;
+}
+.lo .name:hover{
+  color: #0078ff;
+  cursor: pointer;
+}
+.form
+{
+   background-image: linear-gradient(to right , #0077ffb6 , #0077ffb6) , url(../images/overlay-bg.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   margin-top: 100px;
+}
+.img{
+  cursor: pointer;
+}
+.x{
+  transition: all 0.5s;
+}
+.x:hover{
+  background-color: #0078FF;
+  color: white;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}

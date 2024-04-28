@@ -1,0 +1,10 @@
+@media only screen and (max-width: 576px){
+    .text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.tefa h1{
+    font-size: 40px;
+}
+
+}
